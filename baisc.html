@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+</head>
+<style>
+    #header{
+        width:300px;
+        height:50px;
+        border:2px solid black;
+    }
+</style>
+<body>
+    <section id="modernCalci">
+        <form id="basics">
+           <input type="number" id="num1"> <br>
+           <input type="number" id="num2"> <br>
+            <label for="operation">choose an operation</label><br>
+    <select id="operation">
+        <!-- <input type="button" value="+" id="addition" onclick="addition">
+        <input type="button" value="-" id="sutraction" onclick="subtraction">
+        <input type="button" value="*" id="multiplication" onclick="multiplication">
+        <input type="button" value="/" id="division" onclick="division">
+        <input type="submit" value="=" id="total" onclick="total()"> -->
+        <!-- <button id="addition">+</button>
+        <button id="subtraction">-</button>
+        <button id="subtraction">*</button>
+        <button id="subtraction">/</button>
+        <button id="subtraction">=</button> -->
+            <option value="addition">addition</option>
+            <option value="subtraction">subtraction</option>
+            <option value="multiplication">multiplication</option>
+            <option value="division">division</option>
+        </select><br>
+
+        <button type="button" onclick="calculate()">calculate</button>
+        </form>
+
+    </section>
+
+
+    <script src="basic.js" type="text/javascript">
+
+
+    </script>
+    <p>the result is:<span id="result"></span></p>
+</body>
+</html>
